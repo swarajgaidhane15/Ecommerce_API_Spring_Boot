@@ -8,4 +8,6 @@ import com.ecommerce.project.model.User;
 public interface AuthenticationTokenRepo extends JpaRepository<AuthenticationToken, Integer> {
 
   AuthenticationToken findByUser(User user);
+
+  AuthenticationToken findByToken(String token);
 }
